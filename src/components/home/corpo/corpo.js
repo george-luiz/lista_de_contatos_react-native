@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import imagemContato from "../../../../assets/contato.png"
 import { useNavigation } from "@react-navigation/native"
 import estilos from "./estilos"
