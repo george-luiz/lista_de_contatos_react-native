@@ -11,9 +11,14 @@ export default function AppRotas() {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="Contato" component={Contato} />
+            <Stack.Navigator screenOptions={{
+                headerTitleAlign: 'center',
+                headerTitleStyle: {fontSize: 25, color: "white"},
+                headerStyle: {backgroundColor: "#4169E1"}
+            }}>
+
+                <Stack.Screen name="Contatos"  component={Home} />
+                <Stack.Screen name="Criar contato" component={Contato} />
             </Stack.Navigator>
         </NavigationContainer>
     );

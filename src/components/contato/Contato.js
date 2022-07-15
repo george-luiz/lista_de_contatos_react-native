@@ -37,7 +37,7 @@ function validacoes(){
             }
         ]
     );
-    navigation.navigate("Home");
+    navigation.navigate("Contatos");
 }
 
     return <View>

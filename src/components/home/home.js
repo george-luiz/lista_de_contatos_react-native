@@ -7,7 +7,6 @@ import Corpo from "./corpo/corpo";
 export default function Home(){
 
     return <ScrollView>
-        <Cabecalho />
         <Corpo />
     </ScrollView>
 }

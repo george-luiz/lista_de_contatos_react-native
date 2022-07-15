@@ -37,7 +37,7 @@ export default function Corpo(){
                 })} 
             <TouchableOpacity style={estilos.botao} 
                 onPress = {() => {
-                    navigation.navigate("Contato", { contatos: contatos, setContato: setContato});
+                    navigation.navigate("Criar contato", { contatos: contatos, setContato: setContato});
                 }}>
                 <Text style={estilos.textoBotao}>Criar contato</Text>
             </TouchableOpacity>
