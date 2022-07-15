@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { StyleSheet, Text, TextInput, View, TouchableOpacity, Alert } from "react-native";
-import imagemContato from "../../../assets/contato.png"
-import { useNavigation } from "@react-navigation/native"
+import imagemContato from "../../../assets/contato.png";
+import { useNavigation } from "@react-navigation/native";
+import estilos from "./estilos";
 
 export default function Contato( props) {
 const navigation = useNavigation();
@@ -30,7 +31,7 @@ function validacoes(){
         [
             ...props.route.params.contatos, 
             {
-                index: 2,
+                index: Math.floor(Math.random() * 256),
                 imagem: imagemContato,
                 nome: nome,
                 telefone: telefone,
@@ -66,39 +67,3 @@ function validacoes(){
             </TouchableOpacity>
     </View>
 }
-
-
-const estilos = StyleSheet.create({
-    input: {
-        borderWidth: 1,
-        borderColor: "#000",
-        padding: 10,
-        marginHorizontal: 15,
-        marginVertical: 4,
-        borderRadius: 4,
-    },
-    textoNome: {
-        fontSize: 20,
-        marginTop: 20,
-        marginBottom: 5,
-        marginHorizontal: 15,
-    }, 
-    textoTelefone: {
-        fontSize: 20,
-        marginTop: 10,
-        marginBottom: 5,
-        marginHorizontal: 15,
-    }, 
-    botao: {
-        backgroundColor: "#4169E1",
-        marginTop: 20,
-        marginHorizontal: 16,
-        paddingVertical: 16,
-        borderRadius: 8,
-    },
-    textoBotao: {
-        color: "white",
-        textAlign: "center",
-        fontSize: 20,
-    }
-});

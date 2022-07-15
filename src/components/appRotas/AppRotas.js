@@ -14,7 +14,9 @@ export default function AppRotas() {
             <Stack.Navigator screenOptions={{
                 headerTitleAlign: 'center',
                 headerTitleStyle: {fontSize: 25, color: "white"},
-                headerStyle: {backgroundColor: "#4169E1"}
+                headerStyle: {backgroundColor: "#4169E1"},
+                statusBarStyle: 'dark',
+                headerTintColor: "white"
             }}>
 
                 <Stack.Screen name="Contatos"  component={Home} />
