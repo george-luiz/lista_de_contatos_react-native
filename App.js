@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import AppRotas from './src/components/appRotas/AppRotas';
+import Contato from './src/components/contato/Contato';
+import Home from './src/components/home/home';
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <AppRotas/>
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+{/* <SafeAreaView>
+  <StatusBar />
+    <AppRotas />
+     <Home />  
+     <Contato /> 
+</SafeAreaView> */}
